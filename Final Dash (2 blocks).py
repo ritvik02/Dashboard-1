@@ -139,6 +139,7 @@ data['day'] = data['inquiry_date__c'].dt.date
 # app and callbacks 
 
 app = dash.Dash(__name__)
+server = app.server
 # Assuming total_inquiries and figures for pie charts and line chart are defined earlier
 total_inquiries = df.shape[0]  # Example definition
 
